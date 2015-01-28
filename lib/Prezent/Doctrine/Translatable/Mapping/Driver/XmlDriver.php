@@ -15,12 +15,12 @@ use Prezent\Doctrine\Translatable\Mapping\PropertyMetadata;
 use Prezent\Doctrine\Translatable\Mapping\TranslatableMetadata;
 use Prezent\Doctrine\Translatable\Mapping\TranslationMetadata;
 use SimpleXMLElement;
-
+use Prezent\Doctrine\Translatable\Mapping\Driver\FileDriver as PrezentFileDriver;
 
 /**
  * @author Gonzalo Vilaseca <gvilaseca@reiss.co.uk>
  */
-class XmlDriver extends FileDriver
+class XmlDriver extends PrezentFileDriver
 {
     /**
      * Load metadata for a translatable class
